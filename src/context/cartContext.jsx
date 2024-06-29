@@ -31,7 +31,7 @@ const CartContextProvider = (props) => {
     
     useEffect(() => {
         const dataStorage = getStorage("cart");
-        if(dataStorage.length > 0){
+        if(cart.length > 0){
             setCart(dataStorage);
         }
     },[])
